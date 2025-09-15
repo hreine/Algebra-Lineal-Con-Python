@@ -1,69 +1,69 @@
-<font color='purple' size=2.5><i>Updated on Aug 2024</i></font>
+<font color='purple' size=2.5><i>Actualizado en agosto de 2024</i></font>
 ![Presentation1](https://user-images.githubusercontent.com/59842360/159695863-678be5bc-d146-4340-9592-003ad93241e1.jpg)
-# Lectures of Linear Algebra
+# Clases de Álgebra Lineal
 
-These lecture notes are intended for introductory linear algebra courses, suitable for university students, programmers, data analysts, algorithmic traders and etc. 
+Estas notas de clase están destinadas a cursos introductorios de álgebra lineal, adecuadas para estudiantes universitarios, programadores, analistas de datos, traders algorítmicos, etc.
 
-The lectures notes are loosely based on several textbooks:
+Las notas de clase se basan libremente en varios libros de texto:
 
-1. <b><i>Linear Algebra and Its Applications</i></b> by Gilbert Strang 
-2. <b><i>Linear Algebra and Its Applications</i></b> by David Lay 
-3. <b><i>Introduction to Linear Algebra With Applications</i></b> by DeFranza & Gagliardi
-4. <b><i>Linear Algebra With Applications</i></b> by Gareth Williams
+1. <b><i>Linear Algebra and Its Applications</i></b> por Gilbert Strang
+2. <b><i>Linear Algebra and Its Applications</i></b> por David Lay
+3. <b><i>Introduction to Linear Algebra With Applications</i></b> por DeFranza & Gagliardi
+4. <b><i>Linear Algebra With Applications</i></b> por Gareth Williams
 
 ![cover-min](https://user-images.githubusercontent.com/59842360/83939172-64df6c00-a7e3-11ea-80b1-058af696d5a3.png)
 
-However, the crux of the course is not about proving theorems, but to demonstrate the practices and visualization of the concepts. Thus we will not engage in precise deduction or notation, rather we aim to clarify the elusive concepts and thanks to Python/MATLAB, the task is much easier now.
+Sin embargo, el objetivo principal del curso no es demostrar teoremas, sino mostrar las prácticas y la visualización de los conceptos. Por lo tanto, no nos involucraremos en deducciones o notaciones precisas, sino que nuestro objetivo es aclarar los conceptos esquivos y, gracias a Python/MATLAB, la tarea es mucho más fácil ahora.
 
-## Prerequisites
-Though the lectures are for beginners, it is beneficial that attendants had certain amount of exposure to linear algebra and calculus.
+## Requisitos previos
+Aunque las clases son para principiantes, es beneficioso que los asistentes tengan cierta exposición al álgebra lineal y al cálculo.
 
-And also the attendee are expected to have basic knowledge (3 days training would be enough) of 
+Y también se espera que el asistente tenga conocimientos básicos (3 días de capacitación serían suficientes) de
 - [x] Python
 - [x] NumPy
 - [x] Matplotlib
 - [x] SymPy
 
-All the codes are written in an <b>intuitive manner</b> rather than efficient or professional coding style, therefore the codes are exceedingly straightforward, I presume barely anyone would have difficulty in understanding the codes.
+Todos los códigos están escritos de una manera <b>intuitiva</b> en lugar de un estilo de codificación eficiente o profesional, por lo tanto, los códigos son extremadamente sencillos, supongo que casi nadie tendrá dificultades para entender los códigos.
 
-## Environment Setup
-I use poetry to management environment, if you happen to use VS code like me, please follow the steps below:
-1. In Windows powershell and install poetry ``` (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -p```
-2. Navigate to ```cd $env:APPDATA\Python\Scripts```, check if poetry being installed.
-3. Open a notepad ```notepad $profile``` and set alias for poetry ```Set-Alias poetry "C:\Users\user\AppData\Roaming\Python\Scripts\poetry.exe"``` in notepad, I prefered this way, because sometimes setting env path not working in windows.
-4. Reload profile by ```. $profile```.
-5. If you are on your personal computer ```Set-ExecutionPolicy RemoteSigned -Scope CurrentUser``` to unstrict your execution policy and choose Y.
-6. Resume the default restricted policy for security ```Set-ExecutionPolicy Restricted -Scope CurrentUser```.
-7. Now check ```poetry --version```, if you see the version printed, good to go.
-8. You choose to use ```poetry update```, or just manage version at your own convenience.
+## Configuración del entorno
+Uso poetry para la gestión del entorno, si usas VS Code como yo, sigue los pasos a continuación:
+1. En Windows Powershell e instala poetry ``` (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -p```
+2. Navega a ```cd $env:APPDATA\Python\Scripts```, verifica si poetry está instalado.
+3. Abre un bloc de notas ```notepad $profile``` y establece un alias para poetry ```Set-Alias poetry "C:\Users\user\AppData\Roaming\Python\Scripts\poetry.exe"``` en el bloc de notas, prefiero esta forma, porque a veces la configuración de la ruta del entorno no funciona en Windows.
+4. Recarga el perfil con ```. $profile```.
+5. Si estás en tu computadora personal ```Set-ExecutionPolicy RemoteSigned -Scope CurrentUser``` para relajar tu política de ejecución y elige Y.
+6. Restaura la política restringida predeterminada por seguridad ```Set-ExecutionPolicy Restricted -Scope CurrentUser```.
+7. Ahora verifica ```poetry --version```, si ves la versión impresa, todo listo.
+8. Puedes elegir usar ```poetry update```, o simplemente gestionar la versión a tu conveniencia.
 
-## What to Expect from Notes
-These notes will equip you with most needed and basic knowledge for other subjects, such as Data Science, Econometrics, Mathematical Statistics, Financial Engineering, Control Theory and etc., which heavily rely on linear algebra. Please go through the tutorial patiently, you will certainly have a better grasp of the fundamental concepts of linear algebera. Then further step is to study the special matrices and their application with your domain knowledge.  
+## Qué esperar de las notas
+Estas notas te proporcionarán los conocimientos más necesarios y básicos para otras materias, como Ciencia de Datos, Econometría, Estadística Matemática, Ingeniería Financiera, Teoría de Control, etc., que dependen en gran medida del álgebra lineal. Por favor, sigue el tutorial con paciencia, sin duda comprenderás mejor los conceptos fundamentales del álgebra lineal. El siguiente paso es estudiar las matrices especiales y su aplicación con tu conocimiento de dominio.
 
-## Contents
-Please access my webiste for better reading experience: [Linear Algebra for Python](https://www.weijiechen.com/linear-algebra-with-python-book/linear-algebra-index.html)<br>
-[Chapter 1 - Linear Equation System](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%201%20-%20Linear%20Equation%20System.html)<br>
-[Chapter 2 - Basic Matrix Algebra](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%202%20-%20Basic%20Matrix%20Algebra.html)<br>
-[Chapter 3 - Determinant](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%203%20-%20Determinant.html)<br>
-[Chapter 4 - LU Factorization](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%204%20-%20LU%20Factorization.html)<br>
-[Chapter 5 - Vector Addition, Subtraction and Scalar Multiplication](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%205%20-%20Vector%20Addition%2C%20Subtraction%20and%20Scalar%20Multiplication.html)<br>
-[Chapter 6 - Linear Combination](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%206%20-%20Linear%20Combination.html)<br>
-[Chapter 7 - Linear Independence](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%207%20-%20Linear%20Independence.html)<br>
-[Chapter 8 - Vector Space and Subspace](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%208%20-%20Vector%20Space%20and%20Subspace.html)<br>
-[Chapter 9 - Basis and Dimension](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%209%20-%20Basis%20and%20Dimension.html)<br>
-[Chapter 10 -Null Space vs Col Space, Row Space and Rank](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2010%20-Null%20Space%20vs%20Col%20Space%2C%20Row%20Space%20and%20Rank.html)<br>
-[Chapter 11 - Linear Transformation](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2011%20-%20Linear%20Transformation.html)<br>
-[Chapter 12 - Eigenvalues and Eigenvectors](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2012%20-%20Eigenvalues%20and%20Eigenvectors.html)<br>
-[Chapter 13b - Principal Component Analysis](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2013b%20-%20Principal%20Component%20Analysis.html)<br>
-[Chapter 13a - Diagonalization](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2013a%20-%20Diagonalization.html)<br>
-[Chapter 14 - Applications to Dynamic System](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2014%20-%20Applications%20to%20Dynamic%20System.html)<br>
-[Chapter 15 - Innear Product and Orthogonality](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2015%20-%20Innear%20Product%20and%20Orthogonality.html)<br>
-[Chapter 16 - Gram-Schmidt Process and QR Decomposition](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2016%20-%20Gram-Schmidt%20Process%20and%20QR%20Decomposition.html)<br>
-[Chapter 17 - Symmetric Matrices , Quadratic Form and Cholesky Decomposition](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2017%20-%20Symmetric%20Matrices%20%2C%20Quadratic%20Form%20and%20Cholesky%20Decomposition.html)<br>
-[Chapter 18 - The Singular Value Decomposition](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2018%20-%20The%20Singular%20Value%20Decomposition.html)<br>
-[Chapter 19 - Multivariate Normal Distribution](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2019%20-%20Multivariate%20Normal%20Distribution.html)<br>
+## Contenidos
+Por favor, accede a mi sitio web para una mejor experiencia de lectura: [Álgebra Lineal para Python](https://www.weijiechen.com/linear-algebra-with-python-book/linear-algebra-index.html)<br>
+[Capítulo 1 - Sistema de Ecuaciones Lineales](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%201%20-%20Linear%20Equation%20System.html)<br>
+[Capítulo 2 - Álgebra Matricial Básica](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%202%20-%20Basic%20Matrix%20Algebra.html)<br>
+[Capítulo 3 - Determinante](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%203%20-%20Determinant.html)<br>
+[Capítulo 4 - Factorización LU](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%204%20-%20LU%20Factorization.html)<br>
+[Capítulo 5 - Suma, Resta y Multiplicación Escalar de Vectores](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%205%20-%20Vector%20Addition%2C%20Subtraction%20and%20Scalar%20Multiplication.html)<br>
+[Capítulo 6 - Combinación Lineal](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%206%20-%20Linear%20Combination.html)<br>
+[Capítulo 7 - Independencia Lineal](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%207%20-%20Linear%20Independence.html)<br>
+[Capítulo 8 - Espacio Vectorial y Subespacio](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%208%20-%20Vector%20Space%20and%20Subspace.html)<br>
+[Capítulo 9 - Base y Dimensión](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%209%20-%20Basis%20and%20Dimension.html)<br>
+[Capítulo 10 - Espacio Nulo vs Espacio Columna, Espacio Fila y Rango](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2010%20-Null%20Space%20vs%20Col%20Space%2C%20Row%20Space%20and%20Rank.html)<br>
+[Capítulo 11 - Transformación Lineal](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2011%20-%20Linear%20Transformation.html)<br>
+[Capítulo 12 - Valores Propios y Vectores Propios](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2012%20-%20Eigenvalues%20and%20Eigenvectors.html)<br>
+[Capítulo 13b - Análisis de Componentes Principales](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2013b%20-%20Principal%20Component%20Analysis.html)<br>
+[Capítulo 13a - Diagonalización](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2013a%20-%20Diagonalization.html)<br>
+[Capítulo 14 - Aplicaciones a Sistemas Dinámicos](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2014%20-%20Applications%20to%20Dynamic%20System.html)<br>
+[Capítulo 15 - Producto Interno y Ortogonalidad](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2015%20-%20Innear%20Product%20and%20Orthogonality.html)<br>
+[Capítulo 16 - Proceso de Gram-Schmidt y Descomposición QR](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2016%20-%20Gram-Schmidt%20Process%20and%20QR%20Decomposition.html)<br>
+[Capítulo 17 - Matrices Simétricas, Forma Cuadrática y Descomposición de Cholesky](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2017%20-%20Symmetric%20Matrices%20%2C%20Quadratic%20Form%20and%20Cholesky%20Decomposition.html)<br>
+[Capítulo 18 - La Descomposición en Valores Singulares](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2018%20-%20The%20Singular%20Value%20Decomposition.html)<br>
+[Capítulo 19 - Distribución Normal Multivariada](https://www.weijiechen.com/linear-algebra-with-python-book/qmd/Chapter%2019%20-%20Multivariate%20Normal%20Distribution.html)<br>
 
-## Screen Shots Examples
+## Ejemplos de Capturas de Pantalla
 ![截图01](https://user-images.githubusercontent.com/59842360/122352881-6b043e80-cf47-11eb-9ca4-8f52c93c0efa.jpg)
 ![截图03](https://user-images.githubusercontent.com/59842360/122352926-78212d80-cf47-11eb-9bb4-c33e03b7f085.jpg)
 ![截图00](https://user-images.githubusercontent.com/59842360/122352940-7b1c1e00-cf47-11eb-9f80-e26454d4baaf.jpg)
